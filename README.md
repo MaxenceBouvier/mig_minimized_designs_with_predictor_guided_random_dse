@@ -11,12 +11,12 @@ Available at TODO.
 The interested user can retrieve the numbers depicted in the table below with the following.
 
 1. Clone this repo and submodules
-```
+```bash
 git clone --recurse-submodules <this repo>
 ```
 
 2. Build mockturtle CLI executable
-```
+```bash
 mkdir mockturtle/build
 pushd mockturtle/build
 cmake .. && make -j
@@ -29,9 +29,17 @@ popd
 ./mockturtle/build/cli/mockturtle_exe -c "read <path_to_design>; mig; rewrite; print_stats;"
 ```
 
+4. Automatically run the command above on all designs in the `designs` folder.
 An additional script `get_all_values.py` is provided to simplify execution on this command on the full list of designs. Tested with python 3.12.
+To run, simply activate your prefered python environment and run:
+```bash
+pip install -r requirements.txt
+python get_all_values.py
+```
 
-## Final Designs Sizes
+## Designs Sizes
+Here are the design sizes (in number of MIG nodes) of the files given in the `designs` folder, obtained using the method described above.
+
 |design|mig_gates|depth|
 |---|---|---|
 |adder|384|129|
