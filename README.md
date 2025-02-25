@@ -3,7 +3,7 @@
 Repository to share the best designs we could reach using the method described in the paper:
 
 "*Late Breaking Results: The Art of Beating the Odds with Predictor-Guided Random Design Space Exploration*",
-by Felix Arnold, Maxence Bouvier, Ryan Amaudruz, Renzo Andri, and Lukas Cavigelli; all authors from the Huawei Research Center, Switzerland.
+by Felix Arnold, Maxence Bouvier, Ryan Amaudruz, Renzo Andri, and Lukas Cavigelli.
 
 This paper is available in open-access at TODO.
 
