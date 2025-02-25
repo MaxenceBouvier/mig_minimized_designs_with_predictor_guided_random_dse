@@ -1,7 +1,11 @@
 
 ## Introduction
-Designs obtained following the method described in the paper link TODO.
-They are made available here for good faith.
+Designs obtained following the method described in the paper:
+"""
+Late Breaking Results: The Art of Beating the Odds with Predictor-Guided Random Design Space Exploration
+by Felix Arnold, Maxence Bouvier, Ryan Amaudruz, Renzo Andri, and Lukas Cavigelli.
+"""
+Available at TODO.
 
 ## How to Use?
 The interested user can retrieve the numbers depicted in the table below with the following.
