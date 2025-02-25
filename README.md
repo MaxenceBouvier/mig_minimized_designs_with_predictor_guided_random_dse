@@ -1,11 +1,15 @@
 
 ## Introduction
-Designs obtained following the method described in the paper:
-"""
-Late Breaking Results: The Art of Beating the Odds with Predictor-Guided Random Design Space Exploration
-by Felix Arnold, Maxence Bouvier, Ryan Amaudruz, Renzo Andri, and Lukas Cavigelli.
-"""
-Available at TODO.
+Repository to share the best designs we could reach using the method described in the paper:
+
+"*Late Breaking Results: The Art of Beating the Odds with Predictor-Guided Random Design Space Exploration*",
+by Felix Arnold, Maxence Bouvier, Ryan Amaudruz, Renzo Andri, and Lukas Cavigelli; all authors from the Huawei Research Center, Switzerland.
+
+This paper is available in open-access at TODO.
+
+The method has been applied on the original designs of the EPFL Cmobinational Benchamrk Suite.
+They are freely available at https://github.com/lsils/benchmarks.
+
 
 ## How to Use?
 The interested user can retrieve the numbers depicted in the table below with the following.

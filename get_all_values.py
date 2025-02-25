@@ -8,7 +8,16 @@ from tqdm import tqdm
 
 import pandas as pd
 
-def parse_mt_output(text:str):
+def parse_mt_output(text:str) -> dict[str, int]|None:
+    """
+    Parse the output of the mockturtle command.
+    
+    Args:
+        text (str): The output of the mockturtle command.
+        
+    Returns:
+        dict[str, int]: A dictionary containing the number of gates and levels.
+    """
     lines = text.split('\n')
     extract_number = lambda x:int("".join(filter(str.isdigit, x)))
     for line in lines:
@@ -26,7 +35,16 @@ def parse_mt_output(text:str):
         
     return None
 
-def analyze_design(dirpath:Path):
+def analyze_design(dirpath:Path) -> dict[str, Any]|None:
+    """
+    Analyze a design using mockturtle.
+    
+    Args:
+        dirpath (Path): The directory containing the design files.
+        
+    Returns:
+        dict: A dictionary containing the design name and the number of gates and levels.
+    """
     for file in dirpath.iterdir():
         if file.is_file() and file.suffix == '.v':
             design_name = file.with_suffix("").name
@@ -45,12 +63,11 @@ def analyze_design(dirpath:Path):
 
 if __name__ == "__main__":
     cwd = Path(os.getcwd())
-    all_stats: list[dict[Any]] = []
+    all_stats: list[dict[str, Any]] = []
     errors = 0
     
     design_dirpath = cwd / "designs"
 
-    
     with tqdm(total=len(list(design_dirpath.iterdir())), desc="Extract Design Statistics | x100") as pbar:
         with concurrent.futures.ProcessPoolExecutor(max_workers=100) as executor:
             futures = []
