@@ -32,4 +32,26 @@ popd
 An additional script `get_all_values.py` is provided to simplify execution on this command on the full list of designs. Tested with python 3.12.
 
 ## Final Designs Sizes
-TODO
+|design|mig_gates|depth|
+|---|---|---|
+|adder|384|129|
+|bar|1800|15|
+|div|12434|2316|
+|hyp|131487|8991|
+|log2|23291|217|
+|max|1533|260|
+|multiplier|18515|141|
+|sin|3842|118|
+|sqrt|19430|5722|
+|square|8132|128|
+|arbiter|685|36|
+|cavlc|329|15|
+|ctrl|58|9|
+|dec|304|3|
+|i2c|618|21|
+|int2float|107|14|
+|mem_ctrl|6250|36|
+|priority|315|14|
+|router|92|14|
+|voter|3849|41|
+
