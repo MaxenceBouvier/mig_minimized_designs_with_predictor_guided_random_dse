@@ -1,6 +1,6 @@
 
 ## Introduction
-This repository is made available for sharing the best designs we could reach using the method described in the paper:
+This repository is made available for sharing the highest quality of results designs we could obtain using the method described in the paper:
 
 ```
 @misc{arnold2025latebreakingresultsart,
